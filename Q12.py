@@ -23,3 +23,6 @@ def max_subarray_sum(arr):
             current_sum=0
             s=i+1
     return max_sum,arr[start:end+1]
+arr=list(map(int,input().split()))
+result=max_subarray_sum(arr)
+print(result)
