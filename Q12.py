@@ -14,9 +14,10 @@ def max_subarray_sum(arr):
     s=0
     for i in range(len(arr)):
         current_sum+=arr[i]
-        max_sum=max(max_sum,current_sum)
-        start=s
-        end=i
+        if current_sum>max_sum:
+          max_sum=max(max_sum,current_sum)
+          start=s
+          end=i
 
 
         if current_sum<0:
