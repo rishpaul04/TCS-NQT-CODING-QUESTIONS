@@ -34,3 +34,6 @@ def merge_and_count(left_half, right_half):
     result.extend(left_half[i:])
     result.extend(right_half[j:])
     return result, swaps
+arr=list(map(int, input().split()))
+sorted_arr, total_swaps = merge_sort(arr)
+print(total_swaps)
